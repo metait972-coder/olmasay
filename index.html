@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple (O'zbekiston) - Rasmiy uslubdagi shablon</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ikonkalar uchun FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Navigatsiya paneli (Glassmorphism) -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo"><i class="fa-brands fa-apple"></i></a>
+            
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#mac">Mac</a></li>
+                <li><a href="#ipad">iPad</a></li>
+                <li><a href="#iphone">iPhone</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#airpods">AirPods</a></li>
+                <li><a href="#support">Yordam</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <button id="searchBtn" aria-label="Qidirish"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="bagBtn" aria-label="Savat"><i class="fa-solid fa-bag-shopping"></i></button>
+                <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Menyu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Qidiruv modal oynasi -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="apple.com saytidan qidirish...">
+            <button id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- Asosiy qism -->
+    <main>
+        <!-- 1. Hero Section: iPhone 16 Pro (Qora fon) -->
+        <section class="hero dark-theme" id="iphone">
+            <div class="hero-content fade-in">
+                <h1>iPhone 16 Pro</h1>
+                <p class="subtitle">Salom, Apple Intelligence.</p>
+                <div class="cta-links">
+                    <a href="#" class="btn btn-primary">Batafsil</a>
+                    <a href="#" class="btn btn-outline">Sotib olish</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1200&q=80" alt="iPhone 16 Pro">
+            </div>
+        </section>
+
+        <!-- 2. Hero Section: iPhone 16 (Yorug' fon) -->
+        <section class="hero light-theme">
+            <div class="hero-content fade-in">
+                <h1>iPhone 16</h1>
+                <p class="subtitle">Yangi kamera boshqaruvi. Cheksiz imkoniyatlar.</p>
+                <div class="cta-links">
+                    <a href="#" class="btn btn-primary">Batafsil</a>
+                    <a href="#" class="btn btn-outline-dark">Sotib olish</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1200&q=80" alt="iPhone 16">
+            </div>
+        </section>
+
+        <!-- 3. Hero Section: Apple Watch Series 10 -->
+        <section class="hero light-gray-theme" id="watch">
+            <div class="hero-content fade-in">
+                <h2><i class="fa-brands fa-apple"></i> WATCH</h2>
+                <span class="series-tag">SERIES 10</span>
+                <p class="subtitle">Ingichka klassika. Katta ekran.</p>
+                <div class="cta-links">
+                    <a href="#" class="btn btn-primary">Batafsil</a>
+                    <a href="#" class="btn btn-outline-dark">Sotib olish</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1000&q=80" alt="Apple Watch">
+            </div>
+        </section>
+
+        <!-- 4. Ikki ustunli Grid (Promo kartochkalar) -->
+        <section class="promo-grid">
+            <!-- MacBook Air -->
+            <div class="promo-card light-theme fade-in" id="mac">
+                <div class="card-content">
+                    <h3>MacBook Air</h3>
+                    <p>M3 chipi bilan yengil va qudratli.</p>
+                    <div class="card-links">
+                        <a href="#">Batafsil ></a>
+                        <a href="#">Sotib olish ></a>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="MacBook Air">
+            </div>
+
+            <!-- iPad Pro -->
+            <div class="promo-card dark-theme fade-in" id="ipad">
+                <div class="card-content">
+                    <h3>iPad Pro</h3>
+                    <p>Aql bovar qilmas darajada yupqa. M4 kuchi.</p>
+                    <div class="card-links">
+                        <a href="#">Batafsil ></a>
+                        <a href="#">Sotib olish ></a>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80" alt="iPad Pro">
+            </div>
+
+            <!-- Apple Vision Pro -->
+            <div class="promo-card light-gray-theme fade-in" id="vision">
+                <div class="card-content">
+                    <h3><i class="fa-brands fa-apple"></i> Vision Pro</h3>
+                    <p>Fazoviy kompyuterlar davriga xush kelibsiz.</p>
+                    <div class="card-links">
+                        <a href="#">Batafsil ></a>
+                        <a href="#">Demo ko'rish ></a>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=800&q=80" alt="Vision Pro">
+            </div>
+
+            <!-- AirPods Pro 2 -->
+            <div class="promo-card dark-theme fade-in" id="airpods">
+                <div class="card-content">
+                    <h3>AirPods Pro 2</h3>
+                    <p>Endi eshitish salomatligi funksiyalari bilan.</p>
+                    <div class="card-links">
+                        <a href="#">Batafsil ></a>
+                        <a href="#">Sotib olish ></a>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80" alt="AirPods Pro">
+            </div>
+        </section>
+
+        <!-- 5. Apple TV+ Karusel (Slayder) -->
+        <section class="tv-carousel-section">
+            <div class="carousel-container" id="carousel">
+                <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1400&q=80');">
+                    <div class="slide-info">
+                        <span class="badge">Sci-Fi • Yangi mavsum</span>
+                        <h2>Silo</h2>
+                        <button class="btn-white">Hozir tomosha qilish <i class="fa-solid fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1400&q=80');">
+                    <div class="slide-info">
+                        <span class="badge">Triller • Eksklyuziv</span>
+                        <h2>Severance</h2>
+                        <button class="btn-white">Hozir tomosha qilish <i class="fa-solid fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1400&q=80');">
+                    <div class="slide-info">
+                        <span class="badge">Drama • Mukofotlangan</span>
+                        <h2>Foundation</h2>
+                        <button class="btn-white">Hozir tomosha qilish <i class="fa-solid fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+    </main>
+
+    <!-- Footer (Pastki qism) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-note">
+                1. Apple Intelligence funksiyalari barcha hududlar va tillarda mavjud bo'lmasligi mumkin. Ba'zi funksiyalar dasturiy ta'minot yangilanishi orqali taqdim etiladi.
+            </p>
+            <hr>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Xarid qilish va o'rganish</h4>
+                    <ul>
+                        <li><a href="#">Do'kon</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">AirPods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hisob</h4>
+                    <ul>
+                        <li><a href="#">Apple ID boshqaruvi</a></li>
+                        <li><a href="#">Apple Store hisobi</a></li>
+                        <li><a href="#">iCloud.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>O'yin-kulgi</h4>
+                    <ul>
+                        <li><a href="#">Apple One</a></li>
+                        <li><a href="#">Apple TV+</a></li>
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">Apple Arcade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Apple haqida</h4>
+                    <ul>
+                        <li><a href="#">Yangiliklar</a></li>
+                        <li><a href="#">Apple rahbariyati</a></li>
+                        <li><a href="#">Karyera imkoniyatlari</a></li>
+                        <li><a href="#">Investorlar</a></li>
+                        <li><a href="#">Aloqa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2026 Apple Inc. Barcha huquqlar himoyalangan.</p>
+                <div class="legal-links">
+                    <a href="#">Maxfiylik siyosati</a> |
+                    <a href="#">Foydalanish shartlari</a> |
+                    <a href="#">Sayt xaritasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
